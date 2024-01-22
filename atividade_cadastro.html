@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+        <form >
+            <label for="name">Nome</label>
+            <div></div>
+            <input id="name" type="text" required placeholder="Insira seu nome aqui..." name="nome"> 
+            <div></div>
+            <p></p>
+
+            <label for="email">Email</label>    
+            <div></div>
+            <input id="email" type="email" required placeholder="Insira seu email aqui..." name="email">
+            <div></div>
+            <p></p>
+
+            <label for="motivo">O que te motivou a participar do evento?</label>
+            <div></div>
+            <textarea name="descricao-motivo" id="motivo" cols="30" rows="10" placeholder="Descreva aqui..."></textarea>
+            <div></div>
+            <p></p>
+
+            <label for="modulo">Selecione seu módulo na Kenzie</label>
+            <div></div>
+            <select id="modulo" required name="modulo-selecao">
+                <option value="" selected disabled>Selecione seu módulo</option>
+                <option value="um">Módulo 1</option>
+                <option value="dois">Módulo 2</option>
+                <option value="tres">Módulo 3</option>
+                <option value="quatro">Módulo 4</option>
+            </select>
+            <div></div>
+            <p></p>
+
+            <label for="senha">Crie sua senha</label>
+            <div></div>
+            <input id="senha" name="senha" type="password" required placeholder="Crie sua senha...">
+            <div></div>
+            <p></p>
+
+            <label for="confirmacao">Confirme sua senha</label>
+            <div></div>
+            <input id="confirmacao" name="confirmacao-senha" type="password" required placeholder="Confirme sua senha...">
+            <div></div>
+            <p></p>
+
+            <p>Você deseja receber novidades em seu email?</p>
+
+            <label for="sim">Sim</label>
+            <input id="sim" type="radio" required name="novidades">
+            
+            <label for="nao">Não</label>
+            <input id="nao" type="radio" required name="novidades">
+
+            <p></p>
+
+            <div></div>
+            <button type="submit">Cadastrar</button>
+            <div></div>
+        </form>
+</body>
+</html>
